@@ -63,3 +63,8 @@ class PDFManagerGUI:
     def save_pdf(self):
         self.pdf_manager.read_pdf_files()
         self.pdf_manager.save_titles_to_pdf()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = PDFManagerGUI(root)
+    root.mainloop()
